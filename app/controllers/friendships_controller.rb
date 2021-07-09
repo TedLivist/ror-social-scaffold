@@ -23,6 +23,9 @@ class FriendshipsController < ApplicationController
     if friendship_to_update.update(update_params)
       flash[:notice] = 'You are now friends. Hooray! :)'
       redirect_to root_path and return
+    else
+      flash[:alert] = 'You are friends already!'
+      redirect_to posts_path
     end
   end
 
