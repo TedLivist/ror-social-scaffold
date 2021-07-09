@@ -1,4 +1,4 @@
-<% if current_user.friends?(post.user) or post.user.friends?(current_user) or post.user == current_user %>
+<% if check_to_display_post(current_user, post.user) %>
   <li class="post">
     <div>
       <div class='post-attribution' >

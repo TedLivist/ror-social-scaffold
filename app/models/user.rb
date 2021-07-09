@@ -12,8 +12,6 @@ class User < ApplicationRecord
   has_many :friendships
   has_many :inverse_friendships, class_name: 'Friendship', foreign_key: 'friend_id'
 
-  has_many :sent_requests, class_name: 'Friendship', foreign_key: 'user_id'
-
   def check_friendship?(other_user)
     check_friendship = friendships.find_by(friend_id: other_user.id)
     if check_friendship.nil?
@@ -30,17 +28,6 @@ class User < ApplicationRecord
     if friends1.empty? and friends2.empty?
       false
     elsif !friends1.empty? or !friends2.empty?
-      true
-    end
-  end
-
-  def check_approval?(other_user)
-    check_approval = Friendship.where('user_id = ? AND friend_id = ? AND status = ?', other_user.id, id,
-                                      'approved')
-
-    if check_approval.empty?
-      false
-    else
       true
     end
   end
