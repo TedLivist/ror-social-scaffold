@@ -20,17 +20,10 @@ class FriendshipsController < ApplicationController
   def update
     friendship_to_update = Friendship.find(params[:id])
 
-    # check_approval =
-
     if friendship_to_update.update(update_params)
       flash[:notice] = 'You are now friends. Hooray! :)'
       redirect_to root_path and return
-    else
-      puts '--Not--'
     end
-
-    puts friendship_to_update.user.name
-    puts friendship_to_update.friend.name
   end
 
   def destroy
@@ -41,9 +34,6 @@ class FriendshipsController < ApplicationController
     flash[:alert] = 'You have rejected the friend request'
     redirect_to root_path and return
   end
-  # find and find_by
-
-  # group and where
 
   private
 

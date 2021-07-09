@@ -1,20 +1,23 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Scaffold for social media app with Ruby on Rails
 
-> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
+> This is a project built off a social media scaffold. In this project we implemented the relationship between uses among other functionalities
+
+We added some functionalities like making a user able to send friendship request. The receiver of the request can accept or reject the request.
+
+The logged in user can only see the posts made by themself or their friends.
 
 ## Built With
 
-- Ruby v2.7.0
-- Ruby on Rails v5.2.4
+- Ruby v2.7.3 and v3.0.1
+- Rails v6.1.4
 
 ## Live Demo
 
 TBA
 
-
 ## Getting Started
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
@@ -22,29 +25,22 @@ Ruby: 2.6.3
 Rails: 5.2.3
 Postgres: >=9.5
 
-### Setup
-
-Instal gems with:
-
-```
-bundle install
-```
-
-Setup database with:
-
-```
-   rails db:create
-   rails db:migrate
-```
 ### To get a local copy up and running simply follow the next step.
 
 - In your local PC, open your terminal in the folder you would like to clone the project.
-- Clone the repo with the command: `git clone (copied link)`; like so: `git clone https://github.com/danmainah/private-eve.git`
+- Clone the repo with the command: `git clone (copied link)`; like so: `git clone https://github.com/TedLivist/ror-social-scaffold.git`
 - Then run `bundle install` to install all the required dependencies
 - Then run `npm install`
 - Run `rails db:create`, then `rails db:migrate`
+
+### Usage
+
 - Run `rails server` to spin up a development server
 - Once the server is up, open this link `http://127.0.0.1:3000` on your browser
+
+### Run tests
+
+To run the test enter the command: `rpsec --format documentation`
 
 ### Github Actions
 
@@ -55,31 +51,19 @@ To make sure the linters' checks using Github Actions work properly, you should 
 3. Start working on your milestone as usual.
 4. Open a PR from the `feature/branch` when your work is done.
 
-
-### Usage
-
-Start server with:
-
-```
-    rails server
-```
-
-
-### Run tests
-
-```
-    rpsec --format documentation
-```
-
-> Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
-
-### Deployment
-
-TBA
-
 ## Authors
 
-TBA
+👤 **Daniel Maina**
+
+- GitHub: [@danmainah](https://github.com/danmainah)
+- Twitter: [@Danmainah](https://twitter.com/dan_mainah)
+- LinkedIn: [@Daniel-Maina](www.linkedin.com/in/daniel-maina-315a38191)
+
+👤 **Teddy-Livingstone Ememandu**
+
+- [Github](https://github.com/TedLivist)
+- [Twitter](https://twitter.com/iamxted)
+- [LinkedIn](https://linkedin.com/in/tememandu)
 
 ## 🤝 Contributing
 
@@ -90,12 +74,3 @@ Feel free to check the [issues page](issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-TBA
-
-## 📝 License
-
-TBA
-
