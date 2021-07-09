@@ -15,7 +15,7 @@ The logged in user can only see the posts made by themself or their friends.
 
 ## Live Demo
 
-TBA
+[Live Demo](https://blooming-badlands-52258.herokuapp.com/)
 
 ## Getting Started
 
